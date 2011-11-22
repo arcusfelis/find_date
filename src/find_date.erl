@@ -67,7 +67,7 @@ random_date(Year) when Year>0 ->
 		[{year, round(random:uniform() * Year)}]).
 
 max_date(Year) when Year>0 ->
-	i18n_date:new(1970+Year, 1, 1).
+	i18n_date:new(1970+Year+1, 1, 1).
 	
 
 get_compare_fun(SecretDate, FormatFn) ->
