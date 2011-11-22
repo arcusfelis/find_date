@@ -26,7 +26,8 @@ test() ->
 		[{long,   get_format_fun(long)}
 		,{medium, get_format_fun(medium)}
 		,{short,  get_format_fun(short)}
-		,{as_float, fun(X) -> X end}]),
+%		,{as_float, fun(X) -> X end}
+		]),
 	ok.
 	
 io_test({Name, FormatFn}) ->
